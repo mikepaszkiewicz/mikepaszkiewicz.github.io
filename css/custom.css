@@ -1,0 +1,18 @@
+/*
+Theme Name: iDea - Clean & Powerful Bootstrap Theme
+Author: HtmlCoder
+Author URI: http://www.htmlcoder.me
+Author e-mail: htmlcoder.me@gmail.com
+Version: 1.2.0 
+Created: August 2014
+License URI: http://support.wrapbootstrap.com/
+File Description: Place here your custom CSS styles
+*/
+
+.page-title {
+	padding: 60px 0 30px 0;
+}
+
+#mission-padding {
+	padding: 30px;
+}
