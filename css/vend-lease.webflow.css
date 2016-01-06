@@ -1,3 +1,7 @@
+.fa {
+  display: block !important;
+}
+
 .white {
   color: white !important;
 }
@@ -8,6 +12,7 @@
 .icon-mission {
   padding-top: 30px;
   color: #f0660a;
+  padding-left: 22px;
 }
 
 .icon-benefits-left {
@@ -143,10 +148,8 @@
 
 .mission-description {
   width: auto;
-  margin-top: 51px;
-  margin-bottom: 66px;
-  padding-right: 5%;
-  padding-left: 5%;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-family: Lato, sans-serif;
   font-size: 1.7em;
   line-height: 40px;
@@ -163,6 +166,7 @@
 .mission-container {
   padding-bottom: 0px;
   text-align: center;
+  margin-top: -60px;
 }
 
 .break-container {
@@ -319,13 +323,13 @@
   margin-bottom: 39px;
   padding-right: 18%;
   font-family: Lato, sans-serif;
-  font-size: 23px;
-  line-height: 37px;
+  font-size: 1.3em;
+  line-height: 27px;
   font-weight: 300;
 }
 
 .about-main {
-  margin-top: 82px;
+  margin-top: 40px;
   border-style: none;
   border-top-width: 1px;
   border-top-color: rgba(0, 0, 0, 0.36);
@@ -342,6 +346,89 @@
   font-size: 33px;
   line-height: 41px;
   font-weight: 300;
+}
+
+@media (max-width: 500px) {
+
+  .icon-mission,
+  .mission-column-title,
+  .mission-column-description {
+    text-align: center;
+  }
+  .about-main {
+    margin-top: 0px;
+  }
+  .about-main-tag{
+    font-size: 1.9em;
+    padding: 2%;
+  }
+  .about-top-title {
+    line-height: 57px;
+    margin-top: 28px;
+    margin-bottom: 18px;
+    padding-right: 30px;
+  }
+
+  .about-right-image {
+    margin-top: 13px !important;
+  }
+
+  .team-column {
+    padding-bottom: 31px;
+  }
+
+  .team-name-override {
+    margin-top: 6px;
+  }
+
+  #about {
+    padding: 10%;
+  }
+
+  .splash-title {
+    margin: 6.1%;
+    font-family: Lato, sans-serif;
+    color: white;
+    font-size: 4.1em;
+    line-height: 58px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.1px;
+  }
+
+  .splash-description {
+    margin-bottom: 65px;
+padding-right: 19%;
+padding-left: 19%;
+padding: 3% 15px;
+margin: 2% 15px;
+font-family: Lato, sans-serif;
+color: white;
+font-size: 1.3em;
+line-height: 33px;
+font-weight: 300;
+text-align: center;
+  }
+
+  .splash-container  {
+    margin-top: -27px;
+  }
+
+  .mission-title {
+    margin-top: 18px;
+margin-bottom: -13px;
+  }
+
+  .mission-description {
+    font-size: 1.3em;
+    line-height: 36px;
+  }
+
+  .mission-container {
+    margin-top: -20px
+
+  }
+
 }
 
 .about-main-description {
@@ -369,6 +456,18 @@
 
 .contact-text-left {
   padding-left: 25px;
+  position: relative;
+  top: -33px;
+  left: 10px;
+  font-family: Lato, sans-serif;
+}
+
+#phone {
+  top: -26px
+}
+
+#address-container {
+  height: 43px;
 }
 
 .contact-text-container-left {
@@ -548,7 +647,7 @@ box-shadow: 11px 13px 38px -3px rgba(0,0,0,0.75);
 }
 
 .industries-served-description {
-  margin-bottom: 68px;
+  margin-bottom: 20px;
   padding-right: 152px;
   padding-left: 153px;
   font-family: Lato, sans-serif;
@@ -561,16 +660,8 @@ box-shadow: 11px 13px 38px -3px rgba(0,0,0,0.75);
 }
 
 .industries-served-specific-title {
-  position: static;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  overflow-x: visible;
-  overflow-y: visible;
-  width: 50%;
-  margin-left: 26%;
-  float: none;
-  clear: none;
+  float: left;
+  width: 100%;
   border-bottom: 2px solid #8b8b8b;
   font-family: Montserrat, sans-serif;
   color: #2e2e2e;
@@ -580,12 +671,20 @@ box-shadow: 11px 13px 38px -3px rgba(0,0,0,0.75);
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  .industries-served-specific-title {
+    font-size: 1.5em;
+  }
+}
+
 .industries-container {
   margin-bottom: 1px;
   padding-bottom: 0px;
   padding-left: 0px;
   text-align: center;
 }
+
+
 
 .team-title {
   margin-top: 47px;
