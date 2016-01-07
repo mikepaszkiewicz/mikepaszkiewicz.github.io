@@ -1,6 +1,10 @@
 bold {
       font-weight: 500;
 }
+
+#emaillink {
+  color: white;
+}
 .fa {
   display: block !important;
 }
