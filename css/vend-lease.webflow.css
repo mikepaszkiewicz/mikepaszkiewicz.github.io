@@ -232,6 +232,8 @@
 .benefits-item-title {
   font-size: 23px;
   font-weight: 400;
+  font-family: Lato, sans-serif;
+  line-height: 25px;
 }
 
 .benefits-item-div {
@@ -247,6 +249,7 @@
 
 .benefits-item-description {
   color: #747373;
+  font-family: Lato, sans-serif;
 }
 
 .benefits-item-description.right {
@@ -302,13 +305,25 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   padding-left: 31px;
-  padding-top: 71px;
+  padding-top: 15%;
+  }
+
+.discount-icon {
+  background-image:url('../images/discount.jpg');
+  background-repeat: no-repeat;
+height: 103px;
+top: -7px;
+margin-right: -14px;
+width: 51px;
+position: absolute;
+display: block;
 }
 
 .about-top-container {
-  background-image:url('../images/elderly-bizman.jpg');
-  background-position: top 50%;
-  background-size: cover;
+  background-image:url('../images/poppop.jpg');
+  background-position-y: 22%;
+  background-position-x: 30%;
+  height: 415px;  background-size: cover;
 }
 
 .about-top-title {
@@ -354,6 +369,15 @@
   .mission-column-title,
   .mission-column-description {
     text-align: center;
+  }
+
+  .benefits-item-description.left {
+    padding-left: 0%;
+  }
+
+  .icon-benefits-left,
+  .icon-benefits-right {
+    display: none !important;
   }
   .about-main {
     margin-top: 0px;
@@ -523,6 +547,10 @@ margin-bottom: -13px;
 .benefits-section {
   padding-right: 10%;
   padding-left: 10%;
+}
+
+hr {
+  width: 50%;
 }
 
 .customer-benefits-section {
