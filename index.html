@@ -16,6 +16,7 @@
         families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Montserrat:400,700"]
       }
     });
+
   </script>
   <script type="text/javascript" src="js/modernizr.js"></script>
   <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
@@ -39,7 +40,7 @@
       <div class="w-container splash-container">
         <h1 data-ix="move-up-load" class="splash-title">Vend Lease Company</h1>
         <p data-ix="move-up-load" class="splash-description">As we enter our fourth decade as a direct-funding source, Vend Lease has become a premier&nbsp;financial services company to&nbsp;numerous industries throughout the United States.</p>
-        <div class="btn-container"><a href="https://www.elbtools.com/secure/apply.php?elbt=1358271768170" data-ix="move-up-load" class="w-button splash-btn-1">Get a Quote</a>
+        <div class="btn-container"><a href="https://www.elbtools.com/secure/apply.php?elbt=1358271768170" data-ix="move-up-load" class="w-button splash-btn-1">Apply Now</a>
         </div>
         <div class="btn-container"><a href="#mission" data-ix="move-up-load" class="w-button splash-btn-1">&nbsp;Learn More&nbsp;</a>
         </div>
@@ -86,7 +87,7 @@
             </div>
             <div class="w-col w-col-8">
               <div>
-                <h1 class="mission-column-title">36 Years</h1>
+                <h1 class="mission-column-title" id="years"></h1>
                 <p class="mission-column-description">Vend Lease has been providing equipment financing since 1979.</p>
               </div>
             </div>
@@ -279,6 +280,7 @@
     <div class="w-container benefits-btn-container"><a href="https://www.elbtools.com/secure/apply.php?elbt=1358271768170" data-ix="slide-down-scroll" class="w-button benefits-btn">Apply Now</a>
     </div>
   </div>
+  <!--begin footer -->
   <div class="w-section contact-section">
     <div class="contact-overlay-wrapper">
     <div class="w-container contact-container">
@@ -295,7 +297,8 @@
                     <div class="fa fa-street-view fa-2x contact-icon"></div>
                   </span>
                   <span class="">
-                    <div class="contact-text-left">8100 Sandpiper Circle, Suite 300 White Marsh MD, 21236</div>
+                    <div class="contact-text-left">8100 Sandpiper Circle, Suite 300</div>
+                    <div class="contact-text-left">Baltimore, Maryland 21236</div>
                   </span>
                 </div>
               </div>
@@ -321,7 +324,7 @@
                     <div class="fa fa-envelope fa-2x contact-icon"></div>
                   </div>
                   <div class="">
-                    <div class="contact-text-left">info@vendlease.net</div>
+                    <div class="contact-text-left">sales@vendlease.net</div>
                   </div>
                 </div>
               </div>
@@ -357,6 +360,17 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript">
+
+  $(function() {
+    var d = new Date();
+    var n = d.getFullYear();
+
+    var currentYear = n - 1979
+    $('#years').text(currentYear.toString() + " Years");
+  })
+  </script>
+
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
 </html>
