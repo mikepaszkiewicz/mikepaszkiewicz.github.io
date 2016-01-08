@@ -290,9 +290,9 @@
             <div class="w-container">
               <h1 data-ix="slide-in-right" class="contact-title">Contact Us</h1>
             </div>
-            <div class="w-row contact-text-container-left">
+            <div onmouseout="hideImage()" class="w-row contact-text-container-left hover-container">
               <div class="w-col w-col-9">
-                <div data-ix="slide-up-scroll" class="w-row">
+                <div data-ix="slide-up-scroll" class="w-row contact-div">
                   <span class="">
                     <div class="fa fa-street-view fa-2x contact-icon"></div>
                   </span>
@@ -357,11 +357,34 @@
     </div>
   </div>
   </div>
+
+
+  <div class="img_layover">
+    <img class= "building_image"src="images/VLCstreetview.png"/>
+  </div>
+
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript">
+  var imageHidden = true
+  function hideImage(){
+    if(imageHidden){
+      $('.img_layover').velocity("fadeIn", { duration: 500 });
 
+      imageHidden = false
+      console.log('in');
+
+    } else {
+      $('.img_layover').velocity("fadeOut", { duration: 500 });
+
+        imageHidden = true
+        console.log('out');
+
+    }
+
+  }
   $(function() {
     var d = new Date();
     var n = d.getFullYear();

@@ -2,6 +2,21 @@ bold {
       font-weight: 500;
 }
 
+.img_layover img {
+  margin: auto;
+  top: 25%;
+}
+.img_layover:hover {
+  display: block;
+
+}
+
+.building_image {
+  position: fixed;
+  top: 18%;
+  left: 8%;
+}
+
 #emaillink {
   color: white;
 }
@@ -864,5 +879,29 @@ html.w-mod-js *[data-ix="slide-right-load"] {
   .industries-served-description {
     padding-right: 5%;
     padding-left: 5%;
+  }
+}
+
+@media (min-width: 875px) {
+  .building_image {
+    left: 9%;
+  }
+}
+
+@media (min-width: 945px) {
+  .building_image {
+    left: 10%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .building_image {
+    left: 13%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .building_image {
+    left: 16%;
   }
 }
