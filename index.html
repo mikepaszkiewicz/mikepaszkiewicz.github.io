@@ -152,7 +152,7 @@
           <div class="benefits-item-div right">
             <div data-ix="slide-in-right" class="w-row benefits-column-container-left but-right">
               <div class="w-col w-col-2">
-                <div class="benefits-icon-div-right fa fa-lock fa-3x icon-benefits-right white"></div>
+                <div class="benefits-icon-div-right fa fa-edit fa-3x icon-benefits-right white"></div>
               </div>
               <div class="w-col w-col-10 benefits-item-div-right">
                 <h2 data-ix="slide-in-right" class="benefits-item-title white">Plain English Contracts</h2>
@@ -297,8 +297,10 @@
                     <div class="fa fa-street-view fa-2x contact-icon"></div>
                   </span>
                   <span class="">
-                    <div class="contact-text-left">8100 Sandpiper Circle, Suite 300</div>
-                    <div class="contact-text-left">Baltimore, Maryland 21236</div>
+                    <a href="https://www.google.com/maps/place/8100+Sandpiper+Cir,+Nottingham,+MD+21236/@39.3700972,-76.4719216,373m/data=!3m1!1e3!4m2!3m1!1s0x89c80816881ef9a9:0xcbcf93d07267796c!6m1!1e1">
+                      <div class="contact-text-left">8100 Sandpiper Circle, Suite 300</div>
+                      <div class="contact-text-left">Baltimore, Maryland 21236</div>
+                    </a>
                   </span>
                 </div>
               </div>
@@ -370,19 +372,19 @@
   <script type="text/javascript">
   var imageHidden = true
   function hideImage(){
-    if(imageHidden){
-      $('.img_layover').velocity("fadeIn", { duration: 500 });
-
-      imageHidden = false
-      console.log('in');
-
-    } else {
-      $('.img_layover').velocity("fadeOut", { duration: 500 });
-
-        imageHidden = true
-        console.log('out');
-
-    }
+    // if(imageHidden){
+    //   $('.img_layover').velocity("fadeIn", { duration: 500 });
+    //
+    //   imageHidden = false
+    //   console.log('in');
+    //
+    // } else {
+    //   $('.img_layover').velocity("fadeOut", { duration: 500 });
+    //
+    //     imageHidden = true
+    //     console.log('out');
+    //
+    // }
 
   }
   $(function() {

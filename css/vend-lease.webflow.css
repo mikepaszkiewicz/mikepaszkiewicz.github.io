@@ -5,6 +5,7 @@ bold {
 .img_layover img {
   margin: auto;
   top: 25%;
+  display: none;
 }
 .img_layover:hover {
   display: block;
