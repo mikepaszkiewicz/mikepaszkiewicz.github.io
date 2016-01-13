@@ -1,6 +1,14 @@
 bold {
       font-weight: 500;
 }
+.reasons {
+  font-family: Lato, sans-serif;
+  color: #747373;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 300;
+}
+
 
 .img_layover img {
   margin: auto;
