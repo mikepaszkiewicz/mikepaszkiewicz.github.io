@@ -330,8 +330,18 @@ bold {
   padding-right: 0px;
 }
 
-.header-logo {
+.header_logo {
   margin-left: 6px;
+  height: 78px;
+    width: 119px;
+}
+
+@media (max-width: 500px) {
+  .header_logo {
+    margin-left: 6px;
+    height: 54px;
+      width: 91px;
+  }
 }
 
 .about-top-overlay {
@@ -790,22 +800,32 @@ box-shadow: 11px 13px 38px -3px rgba(0,0,0,0.75);
 
 .team-pic-div {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .team-div-text {
   text-align: center;
 }
 
+.team-padding {
+  padding-top: 19px;
+}
 .team-name {
-  border-bottom: 1px solid #b8b8b8;
   font-family: Lato, sans-serif;
-  line-height: 52px;
+  line-height: 20px;
   font-weight: 400;
 }
 
 .team-description {
   font-family: Lato, sans-serif;
   font-weight: 300;
+}
+
+.team-description-info {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  border-bottom: 1px solid #b8b8b8;
+  padding-bottom: 11px;
 }
 
 .team-row {
