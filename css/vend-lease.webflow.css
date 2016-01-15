@@ -752,6 +752,18 @@ box-shadow: 11px 13px 38px -3px rgba(0,0,0,0.75);
   text-align: right;
 }
 
+#mobile-text-center {
+  text-align: center !important;
+}
+
+#mobile-margin-bottom {
+  margin-bottom: 35px !important;
+}
+
+#mobile-text-style {
+  font-size: 3.5em;
+}
+
 .industries-served-description {
   margin-bottom: 20px;
   padding-right: 152px;
