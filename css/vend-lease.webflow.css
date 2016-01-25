@@ -584,12 +584,6 @@ display: block;
   font-family: Lato, sans-serif;
 }
 
-.contact-submit:hover {
-  border: 2px solid #f0660a;
-  background-color: transparent;
-  color: black;
-}
-
 .contact-form-title {
   font-family: Lato, sans-serif;
   font-weight: 300;
