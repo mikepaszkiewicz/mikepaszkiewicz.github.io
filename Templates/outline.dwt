@@ -1,0 +1,116 @@
+<html>
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>VendLease</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../styles/outline.css" type="text/css">
+<!-- #BeginEditable "inlineStyles" -->
+<style type="text/css" media"screen">
+	  li#top-home a:link, li#top-home a:visited {
+	    background: #FFECD9;
+		}
+	  </style>
+	<!-- #EndEditable -->  
+</head>
+
+<body>
+<table id="headerTable" width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="240" rowspan="2"><img src="../outline/images/logo_wide_sm.gif" width="140" height="80"></td>
+    <td colspan="2" id="headerSlogan">You can't buy success...but you can lease it! </td>
+  </tr>
+  <tr>
+    <td width="100%" id="headerNav"><div id="topNav">
+        <ul>
+          <li id="top-home"><a href="../outline/index.htm">Home</a></li>
+		  <li id="top-leasing"><a href="../outline/leasing.htm">Lessee Benefits</a></li>
+		  <li id="top-vendor"><a href="../outline/vendor.htm">Vendor Benefits</a></li>
+          <li id="top-about"><a href="../outline/about.htm">About Us</a></li>
+		  <li id="top-team"><a href="../outline/team.htm">Our Team</a></li>
+		  <li id="top-franchise"><a href="../outline/franchise.htm">Franchise</a></li>
+		  <li id="top-news"><a href="../outline/news.htm">News</a></li>
+		  <li id="top-testimonials"><a href="../outline/testimonials.htm">Testimonials</a></li>
+		  <li id="top-apply"><a href="../outline/apply.htm">Apply Now</a></li>
+		  <li id="top-contact"><a href="../outline/contact.htm">Contact</a></li>
+        </ul>
+    </div></td>
+    <td width="20"><img src="../outline/images/transparent.gif" width="20" height="40"></td>
+  </tr>
+  <tr>
+    <td id="headerRules" colspan="3"><img src="../outline/images/lines.gif" width="17" height="12"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="6">
+  <tr valign="top"> 
+    <td id="sidebar" width="40"><!-- TemplateBeginEditable name="leftColumn" -->
+      <p><img src="../outline/images/image.gif" width="140" height="140"></p>
+      <p>INTEGRITY: Truth is not a luxury; it is a necessity. We will always perform to the highest standards of integrity</p>
+    <!-- TemplateEndEditable --><img src="../outline/images/transparent.gif" width="40" height="10"></td>
+    <td width="100%" id="content"> <!-- #BeginEditable "bodyTable" -->
+      <h1>Heading 1</h1>
+      <p><a href="http://www.lipsum.com/" target="_blank">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Nunc ultrices
+        tortor nec nulla. Mauris quis velit. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos hymenaeos. Fusce rhoncus.
+        Integer pulvinar. Integer vitae mi quis lacus facilisis ultrices. Integer
+        id est. Sed pellentesque. Ut urna justo, faucibus nec, dapibus vitae,
+        gravida et, odio. Praesent id tortor a tellus gravida tincidunt. Vivamus
+        porttitor dolor id ante. Morbi lorem metus, lobortis at, vulputate convallis,
+        commodo id, odio. Integer pellentesque arcu id risus. Pellentesque gravida
+        dignissim quam. Aliquam tristique condimentum nibh. Etiam blandit, ligula
+        eget tincidunt vulputate, wisi mauris posuere odio, non ultricies lacus
+        augue sed turpis. Curabitur hendrerit. Mauris non lorem ut velit condimentum
+      sodales.</p>
+      <p>Nunc posuere tempus lectus. Suspendisse potenti. Nam in enim. Morbi
+        gravida massa quis wisi adipiscing rhoncus. Nulla facilisi. Cras sem
+        wisi, rutrum vitae, accumsan quis, imperdiet sed, elit. Duis sagittis.
+        In odio ante, pulvinar quis, malesuada tristique, luctus eget, arcu.
+        Vestibulum velit diam, mollis ac, aliquam tincidunt, rutrum in, odio.
+        Sed diam. In molestie wisi nec tellus. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Suspendisse semper
+        ornare nunc. Maecenas nunc. Duis tortor. Nulla dignissim sem id pede
+        cursus facilisis. Vivamus iaculis ornare augue.</p>
+      <h2>SubHeading</h2>
+      <p>Ulliam corper suscipit lobortis nisl ut aliquip ex ea commodo
+          consequat. Duis autem veleum iriure dolor in hendrerit in vulputate
+        velit esse molestie consequat. Vel willum lunombro dolore eu feugiat
+        nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+        blandit praesent luptatum zzril delenit augue duis dolore te feugait
+        nulla facilisi.</p>
+      <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+      </ul>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="8">
+        <tr valign="top">
+          <td>Mailing Address </td>
+          <td>102 Main Street<br>
+            Baltimore, MD 21010 </td>
+        </tr>
+        <tr valign="top">
+          <td>Phone</td>
+          <td>(800) 333-3333</td>
+        </tr>
+        <tr valign="top">
+          <td>Fax</td>
+          <td>(800) 444-4444 </td>
+        </tr>
+        <tr valign="top">
+          <td>E-mail</td>
+          <td>info@domain.com</td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+    <!-- #EndEditable --></td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td id="footer"><p>6422 Frankford Ave. &bull; Baltimore, Maryland 21206 &bull; 410.485.2244 or 888.363.5327 </p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<html>
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>Untitled Document</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../styles/outline.css" type="text/css">
+</head>
+
+<body>
+<table id="headerTable" width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr> 
+    <td rowspan="2" width="160"> 
+      <a href="../outline/index.htm"><img src="../outline/images/logo_wide_sm.gif" width="150" height="80" border="0"></a>
+    </td>
+    <td id="slogan">The slogan that means so much
+    </td>
+  </tr>
+  <tr> 
+    <td><table id="headerNav" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td id="home"><a href="../outline/index.htm">Home</a></td>
+        <td id="about"><a href="../outline/index.htm">About Us</a></td>
+        <td id="news"><a href="../outline/index.htm">News</a></td>
+        <td id="contact"><a href="../outline/index.htm">Contact</a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+<table id="bodyTable" summary="body table" width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr valign="top"> 
+    <td id="sidebar" width="160"> <table width="100%">
+      <tr>
+        <th>Convenience is Everything</th>
+      </tr>
+      <tr valign="top">
+        <td><ul>
+          <li><a href="../outline/index.htm">First link</a>
+              </li>
+          <li><a href="../outline/index.htm">Second Link</a>
+              </li>
+          <li><a href="../outline/index.htm">Third Link</a>
+              </li>
+          <li><a href="../outline/index.htm">Fourth Link</a>
+          </li>
+        </ul></td>
+        </tr>
+    </table>
+    <img src="../outline/images/transparent.gif" width="150" height="10"></td>
+    <td id="content" summary="main content"> <!-- #BeginEditable "bodyTable" -->
+      <h1>Heading 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+         Ut wisi enim ad minim veniam. Quis n ostrud exercitation.</p>
+      <h2>SubHeading</h2>
+      <p>Ulliam corper suscipit lobortis nisl ut aliquip ex ea commodo
+          consequat. Duis autem veleum iriure dolor in hendrerit in vulputate
+        velit esse molestie consequat. Vel willum lunombro dolore eu feugiat
+        nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+        blandit praesent luptatum zzril delenit augue duis dolore te feugait
+        nulla facilisi.</p>
+      <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+      </ul>
+      <p>Duis autem veleum iriure dolor in hendrerit in vulputate velit esse molestie 
+        consequat. Vel willum lunombro dolore eu feugiat nulla facilisis at vero 
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+        zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+      <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt 
+        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. 
+        Quis nostrud exercitation.</p>
+<!-- #EndEditable -->    </td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td id="footer"><p>100 N. Charles Street &bull; Baltimore, Maryland 21212 &bull; 888-222-3535 </p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

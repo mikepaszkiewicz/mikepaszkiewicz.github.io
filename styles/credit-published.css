@@ -1,0 +1,29 @@
+    table.mainTable, table.mainTable td {
+      border:1px solid black;
+      font-size:28px;
+      padding:3px;
+    }
+
+    .sub-table table, .sub-table td {
+      border:1px solid white;
+
+    }
+    
+    .published {
+      font-weight:bold;
+      font-size:32px;
+    }  
+
+    .centerText {
+      text-align:center;
+    }
+    
+    .title {
+    font-family:times;
+    padding-top:10px;
+    font-size:18px;
+    font-style:italic;
+    padding-left:20px;
+    font-weight:bold;
+    
+  }
