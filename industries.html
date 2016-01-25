@@ -286,10 +286,9 @@
             </div>
           </div>
         </div>
-        <!-- id="email-form" name="email-form" data-name="Email Form"  -->
         <div class="w-col w-col-7 contact-form-container">
           <div class="w-form">
-            <form action="http://formspree.io/mike@tryhabitat.com" method="POST">
+            <form id="email-form" name="email-form" data-name="Email Form" >
               <h3 data-ix="slide-in-right" class="contact-form-title">Any Questions?</h3>
               <input id="name" type="text" placeholder="Enter your name" name="name" data-name="Name" data-ix="slide-up-scroll" class="w-input">
               <input id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required" data-ix="slide-up-scroll" class="w-input">
@@ -311,5 +310,18 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  <script type="text/javascript">
+
+  $(".contact-submit").on("click", function() {
+    message = $("#message").serialize();
+    $.ajax({
+        url: "http://formspree.io/mike@tryhabitat.com",
+        method: "POST",
+        data: {message: message},
+        dataType: "json"
+    });
+    return false;
+});
+  </script>
 </body>
 </html>
