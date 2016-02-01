@@ -63,6 +63,9 @@ bold {
 .header_logo {
   padding-right: 0px;
   padding-left: 0px;
+  height: 68px;
+  width: 135px;
+  margin-left: -31px;
 }
 
 .header-section {
@@ -328,11 +331,6 @@ bold {
 
 .benefits-left-column {
   padding-right: 0px;
-}
-
-.header_logo {
-  height: 78px;
-    width: 119px;
 }
 
   .industries-container-mobile {

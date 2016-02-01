@@ -11,14 +11,14 @@ include_once('credit/form-class.php');
 include_once('credit/validation.php');
 include_once('credit/states.php');
 
-    
+
 if (isset($_REQUEST["Reset_Application"])) {
   header("Location: ".$_SERVER['PHP_SELF']);
   exit;
 }
 
 
-   
+
 
 $hash = md5($_REQUEST["full_legal_name"]. date('Y-m-d H:i:s'));
 
@@ -29,21 +29,21 @@ if (isset($_REQUEST) && $_SERVER['REQUEST_METHOD'] == "POST") {
 }
     $form = new form();
 
-    
-    
+
+
     if ($validate->is_valid == 1) {
       $form->publish = 1;
     } else {
       $form->publish = 0;
       $form->errors = $validate->errors;
     }
-    
+
 if (isset($_REQUEST["Print_Application"])) {
 
   $PDFcreate = 1;
   $PDFoption = 'I';
   $PDFsecure = 0;
-  $form->publish = 1;  
+  $form->publish = 1;
   $string = get_include_contents('credit/application.php', $form, $state_list);
   $form->publish = 0;
 } else if ($form->publish == 1) {
@@ -53,14 +53,14 @@ if (isset($_REQUEST["Print_Application"])) {
   $string = get_include_contents('credit/application.php', $form, $state_list);
 } else {
   $string = get_include_contents('credit/form.php', $form, $state_list);
-}   
+}
 
 
 
 
 
 
-     
+
 function get_include_contents($filename, $form, $states) {
     if (is_file($filename)) {
         ob_start();
@@ -71,7 +71,7 @@ function get_include_contents($filename, $form, $states) {
 }
 if (isset($PDFcreate) && $PDFcreate == 1) {
   $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
-  
+
     $pdf->SetCreator(PDF_CREATOR);
     $pdf->SetAuthor('VENDLEASE');
     $pdf->SetTitle('CREDIT APPLICATION');
@@ -98,8 +98,8 @@ if (isset($PDFcreate) && $PDFcreate == 1) {
     $pdf->setLanguageArray($lg);
 // ---------------------------------------------------------
     $pdf->AddPage();
-    $pdf->writeHTML($string, true, false, true, false, '');  
-  
+    $pdf->writeHTML($string, true, false, true, false, '');
+
     // *******************************************************************
     // reset pointer to the last page
     $pdf->lastPage();
@@ -121,16 +121,16 @@ if (isset($PDFcreate) && $PDFcreate == 1) {
         null
        );
 
-     } 
-     
+     }
+
 
 
     $pdfcontent = $pdf->Output('', 'S');
-    
+
 
     $pdf->Output('files/applications/'.$_REQUEST["full_legal_name"].'-'.date('m-d-Y H:i:s').'-'.$hash.'.pdf', $PDFoption);
     }
-if ($form->publish) {     
+if ($form->publish) {
 $htmlbody = "This form was submitted on ". date('m-d-Y')." at ". date("H:i:s"). " by " . $_SERVER["REMOTE_ADDR"];
 $textmessage = "This form was submitted on ". date('m-d-Y')." at ". date("H:i:s"). " by " . $_SERVER["REMOTE_ADDR"];
 
@@ -185,7 +185,7 @@ $message .= "--PHP-mixed-$random_hash--";
 
     // Send the message
     $ok = @mail($to, $subject, $message, $headers);
-    if ($ok)  { 
+    if ($ok)  {
      $string =<<<EOF
     <br><br>
      <h2 class="centerText">Thank you for your application. <br /><br />  Vend Lease Company, Inc.  will provide you with a response within hours of your submission. <br /><br /> If you have any questions please call 888-363-5327 x138 or x131</h2>
@@ -197,7 +197,7 @@ EOF;
       $string = "<br /><h2 class=\"errors centerText\">Error sending application, please try again later.</h2>".$string;
 
     }
-}  
+}
 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -227,7 +227,7 @@ function MM_CheckFlashVersion(reqVerStr,msg){
   with(navigator){
     var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
     var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
-    if (!isIE || !isWin){  
+    if (!isIE || !isWin){
       var flashVer = -1;
       if (plugins && plugins.length > 0){
         var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
@@ -247,25 +247,25 @@ function MM_CheckFlashVersion(reqVerStr,msg){
 
       var verArr = reqVerStr.split(",");
       var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
-  
+
       if (flashVer < reqVer){
         if (confirm(msg))
           window.location = "http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
       }
     }
-  } 
+  }
 }
 </script>
 <script src="scripts/AC_RunActiveContent.js" type="text/javascript"></script>
   <?php if (!$form->publish) { ?>
-<link type="text/css" rel="stylesheet" href="styles/credit-form.css">  
+<link type="text/css" rel="stylesheet" href="styles/credit-form.css">
   <?php } else { ?>
 <link type="text/css" rel="stylesheet" href="styles/credit-published.css">
   <?php } ?>
-  
+
 
   <?php if ($form->publish) { ?>
-  
+
   <style>
     table.mainTable, table.mainTable td {
       border:1px solid black;
@@ -283,19 +283,19 @@ function MM_CheckFlashVersion(reqVerStr,msg){
     }
     .ghost-text {
       color:#ccc !important;
-      font-weight:bold !important; 
+      font-weight:bold !important;
       color:red;
-    }  
+    }
   </style>
 
 <?php } ?>
 <script src="/js/jquery.js"></script>
 <script src="/js/jquery.maskedinput.js"></script>
 <script src="/js/jquery.priceformat.js"></script>
- 
+
 <script>
 
-  
+
   $(function()  {
    //$(".date").mask("?**/**/**");
    //$(".phone").mask("?**9-999-999? ext:99999");
@@ -318,7 +318,7 @@ function MM_CheckFlashVersion(reqVerStr,msg){
             }
         });
     });
-    
+
     $(document).on('keydown', '.ssn', function() {
         var curchr = this.value.length;
 		    var curval = $(this).val();
@@ -328,7 +328,7 @@ function MM_CheckFlashVersion(reqVerStr,msg){
 			   $(this).val(curval + "-");
 			  }
       });
-      
+
       $(document).on('keydown', '.date', function() {
         var curchr = this.value.length;
 		    var curval = $(this).val();
@@ -337,9 +337,9 @@ function MM_CheckFlashVersion(reqVerStr,msg){
 		    } else if (curchr == 5) {
 			   $(this).val(curval + "/");
 			  }
-      });      
-      
-      
+      });
+
+
       $(document).on('keydown', '.mobile, .fax, .phone', function() {
         var curchr = this.value.length;
 		    var curval = $(this).val();
@@ -348,16 +348,16 @@ function MM_CheckFlashVersion(reqVerStr,msg){
 		    } else if (curchr == 7) {
 			   $(this).val(curval + "-");
 			  }
-			  
-			  
-      });      
+
+
+      });
    $(document).on('change', '.price', function() {
        //var curchr = this.value.length;
     });
-    
+
     $('.price').priceFormat({
      prefix: "$",
-     
+
     });
 
   function transform( obj ) {
@@ -370,15 +370,15 @@ function MM_CheckFlashVersion(reqVerStr,msg){
   }
 
 
-    
+
 
   });
 
-</script>  
+</script>
 </head>
 
 <body id="yahoo-com" onLoad="MM_CheckFlashVersion('7,0,0,0','Content on this site requires a newer version of Macromedia Flash Player. Do you want to download it now?');">
-<div id="doc3" class="yui-t4"><!-- "doc" here for example only; use any page width -->			
+<div id="doc3" class="yui-t4"><!-- "doc" here for example only; use any page width -->
 	<div id="hd">
 		<!-- the following div is for search engines -->
 		<div class="ct">
@@ -386,8 +386,8 @@ function MM_CheckFlashVersion(reqVerStr,msg){
 				<h1>Vend Lease Company, Inc. Established 1979</h1>
 				<h2>You can't buy success ... but you can lease it.</h2>
 			</div>
-			
-			
+
+
 			<table width="100%" border="0" cellspacing="0" cellpadding="0" valign="top">
   <tr>
     <td width="515" valign="top"><div class="headerImage"><img src="layout/headerLogo.gif" height="93"  ></div></td>
@@ -396,7 +396,7 @@ function MM_CheckFlashVersion(reqVerStr,msg){
 	<div id="firstflash">
 You do not have Flash Player installed...install the player by clicking on the link.
 <a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">Get Player</a>
- 
+
 </div>
       <script type="text/javascript">
    var fo = new FlashObject("layout/keyWords.swf", "firstflash", "400", "93", "8,0,0,0", "#000000");
@@ -422,7 +422,7 @@ You do not have Flash Player installed...install the player by clicking on the l
 	  </div>
 	</div>
 	<div id="bd">
-	
+
 
 
     <table class="contParent01" >
@@ -435,29 +435,28 @@ You do not have Flash Player installed...install the player by clicking on the l
               <td background="images/titBlank.gif" class="title" >Vend Lease Credit Application</td>
             </tr>
           </table>
-             <div style="text-align:center;">             
-     <br><br>                     
+             <div style="text-align:center;">
+     <br><br>
   <p>Our Credit Application has moved, Please update your bookmarks with the link below:</p>
-  
+
   <p><a target="_blank" href="https://www.elbtools.com/secure/apply.php?elbt=1358271768170">https://www.elbtools.com/secure/apply.php?elbt=1358271768170</a></p>
-  
+
   <p>You will be automatically redirected to the new form in 30 seconds</p>
-  
-  
+
+
   </div>
-                           
-                          
-                            
-          
+
+
+
+
           <!-- InstanceEndEditable -->
         </td>
     </tr>
     </table>
-    	
+
 	</div>
 
 </div>
 
 </body>
 <!-- InstanceEnd --></html>
-

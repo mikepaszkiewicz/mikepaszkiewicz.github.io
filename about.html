@@ -27,7 +27,11 @@
       <div class="w-container nav">
         <a href="#" class="w-nav-brand"><img width="100" src="images/Copy (2) of NEW-Vendlease full color 12-2-11.png" class="header_logo">
         </a>
-        <nav role="navigation" class="w-nav-menu"><a href="index.html" class="w-nav-link nav-link">Home</a><a href="index.html#customer-benefits" class="w-nav-link nav-link">Customer Benefits</a><a href="index.html#vendor-benefits" class="w-nav-link nav-link">Vendor Benefits</a><a href="industries.html" class="w-nav-link nav-link">Industries</a><a href="about.html" class="w-nav-link nav-link">About</a><a href="https://www.elbtools.com/secure/apply.php?elbt=1358271768170" class="w-nav-link nav-link">Apply Now</a><a href="#email-form" class="w-nav-link nav-link">Contact</a>
+        <nav role="navigation" class="w-nav-menu">
+          <a href="index.html" class="w-nav-link nav-link">Home</a>
+          <a href="index.html#customer-benefits" class="w-nav-link nav-link">Customer Benefits</a>
+          <a href="index.html#vendor-benefits" class="w-nav-link nav-link">Vendor Benefits</a>
+          <a href="industries.html" class="w-nav-link nav-link">Industries</a><a href="about.html" class="w-nav-link nav-link">About</a><a href="https://www.elbtools.com/secure/apply.php?elbt=1358271768170" class="w-nav-link nav-link">Apply Now</a><a href="#email-form" class="w-nav-link nav-link">Contact</a>
         </nav>
         <div class="w-nav-button">
           <div class="w-icon-nav-menu"></div>
@@ -274,7 +278,7 @@
         </div>
         <div class="w-col w-col-7 contact-form-container">
           <div class="w-form">
-            <form action="http://formspree.io/mike@tryhabitat.com" method="POST">
+            <form id="email-form" name="email-form" data-name="Email Form" >
               <h3 data-ix="slide-in-right" class="contact-form-title">Any Questions?</h3>
               <input id="name" type="text" placeholder="Enter your name" name="name" data-name="Name" data-ix="slide-up-scroll" class="w-input">
               <input id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required" data-ix="slide-up-scroll" class="w-input">
@@ -293,9 +297,26 @@
     </div>
   </div>
   </div>
-  </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
-</body>
+  <script type="text/javascript">
+
+  $(".contact-submit").on("click", function() {
+    message = $("#message").serialize();
+    $.ajax({
+        url: "http://formspree.io/sales@vendlease.net",
+        method: "POST",
+        data: {message: message},
+        dataType: "json"
+    });
+    alert("Thanks! We'll be in touch shortly.")
+    $('#name').val('');
+    $('#email').val('');
+    $('#message').val('');
+
+    return false;
+  });
+  </script>
+  </body>
 </html>
