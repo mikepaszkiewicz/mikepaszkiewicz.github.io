@@ -422,6 +422,19 @@
 // });
   </script>
 
+  <?php
+  if ($_REQUEST['action'])
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    $from="From: $name<$email>\r\nReturn-path: $email";
+    $subject="Message sent using your contact form";
+
+    mail("mike@tryhabitat.com", $subject, $message, $from);
+    }
+  ?>
+
 
 
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
