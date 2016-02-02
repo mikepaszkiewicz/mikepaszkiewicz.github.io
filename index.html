@@ -349,7 +349,6 @@
           <div class="w-form">
             <form id="email-form" name="email-form" data-name="Email Form">
               <h3 data-ix="slide-in-right" class="contact-form-title">Any Questions?</h3>
-              <input type="hidden" name="_subject" value="VLC Website Submission" />
               <input id="name" type="text" placeholder="Enter your name" name="name" data-name="Name" data-ix="slide-up-scroll" class="w-input">
               <input id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required" data-ix="slide-up-scroll" class="w-input">
               <textarea id="message" placeholder="Message" name="message" data-name="message" required="required" data-ix="slide-up-scroll" class="w-input"></textarea>
@@ -409,14 +408,17 @@
 
   $(".contact-submit").on("click", function() {
     message = $("#message").val();
-    name = $('#name').val('');
-    email = $('#email').val('');
+    name = $('#name').val();
+    email = $('#email').val();
 
     body = 'From: ' + email + ' (' + name + ') + \n \n ' + message;
     $.ajax({
         url: "http://formspree.io/mike@tryhabitat.com",
         method: "POST",
-        data: {message: body},
+        data: {
+          message: body,
+          subject: 'Test'
+        },
         dataType: "json"
     });
     $('#name').val('');
