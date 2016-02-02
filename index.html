@@ -347,7 +347,7 @@
         </div>
         <div class="w-col w-col-7 contact-form-container">
           <div class="w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" action="" method="POST" >
+            <form id="email-form" name="email-form" data-name="Email Form" action="contactform.php" method="POST" enctype="multipart/form-data" >
               <h3 data-ix="slide-in-right" class="contact-form-title">Any Questions?</h3>
               <input id="name" type="text" placeholder="Enter your name" name="name" data-name="Name" data-ix="slide-up-scroll" class="w-input">
               <input id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required" data-ix="slide-up-scroll" class="w-input">
@@ -422,24 +422,7 @@
 // });
   </script>
 
-  <?php
-  if ($_REQUEST['action'])
-    {
-    $name=$_REQUEST['name'];
-    $email=$_REQUEST['email'];
-    $message=$_REQUEST['message'];
-    if (($name=="")||($email=="")||($message==""))
-        {
-        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-        }
-    else{
-        $from="From: $name<$email>\r\nReturn-path: $email";
-        $subject="Message sent using your contact form";
-        mail("mike@tryhabitat.com", $subject, $message, $from);
-        echo "Email sent!";
-        }
-    }
-?>
+
 
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
