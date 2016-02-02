@@ -411,15 +411,17 @@
     name = $('#name').val();
     email = $('#email').val();
 
-    body = 'From: ' + email + ' (' + name + ') + \n \n ' + message;
+    body = 'From: ' + email + ' (' + name + ') \n \n ' + message;
     $.ajax({
         url: "http://formspree.io/mike@tryhabitat.com",
         method: "POST",
         data: {
-          message: body,
-          subject: 'Test'
+          From: email,
+          Name: name,
+          message: body
         },
-        dataType: "json"
+        dataType: "json",
+        _subject: 'Test'
     });
     $('#name').val('');
     $('#email').val('');
