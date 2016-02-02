@@ -407,6 +407,7 @@
   <script type="text/javascript">
 
   $(".contact-submit").on("click", function() {
+    debugger;
     message = $("#message").serialize();
     $.ajax({
         url: "http://formspree.io/mike@tryhabitat.com",
