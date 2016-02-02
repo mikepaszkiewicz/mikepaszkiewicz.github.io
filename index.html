@@ -347,8 +347,9 @@
         </div>
         <div class="w-col w-col-7 contact-form-container">
           <div class="w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" action="contactform.php" method="POST" enctype="multipart/form-data" >
+            <form id="email-form" name="email-form" data-name="Email Form">
               <h3 data-ix="slide-in-right" class="contact-form-title">Any Questions?</h3>
+              <input type="hidden" name="_subject" value="VLC Website Submission" />
               <input id="name" type="text" placeholder="Enter your name" name="name" data-name="Name" data-ix="slide-up-scroll" class="w-input">
               <input id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required" data-ix="slide-up-scroll" class="w-input">
               <textarea id="message" placeholder="Message" name="message" data-name="message" required="required" data-ix="slide-up-scroll" class="w-input"></textarea>
@@ -405,24 +406,28 @@
 
   </script>
   <script type="text/javascript">
-//
-//   $(".contact-submit").on("click", function() {
-//     message = $("#message").val();
-//     $.ajax({
-//         url: "http://formspree.io/mike@tryhabitat.com",
-//         method: "POST",
-//         data: {message: message},
-//         dataType: "json"
-//     });
-//     $('#name').val('');
-//     $('#email').val('');
-//     $('#message').val('');
-//     alert("Thanks! We'll be in touch shortly.")
-//     return false;
-// });
+
+  $(".contact-submit").on("click", function() {
+    message = $("#message").val();
+    name = $('#name').val('');
+    email = $('#email').val('');
+
+    body = 'From: ' + email + ' (' + name + ') + \n \n ' + message;
+    $.ajax({
+        url: "http://formspree.io/mike@tryhabitat.com",
+        method: "POST",
+        data: {message: body},
+        dataType: "json"
+    });
+    $('#name').val('');
+    $('#email').val('');
+    $('#message').val('');
+    alert("Thanks! We'll be in touch shortly.")
+    return false;
+});
   </script>
 
-  <?php
+  <!-- <?php
   if ($_REQUEST['action'])
     {
     $name=$_REQUEST['name'];
@@ -433,7 +438,7 @@
 
     mail("mike@tryhabitat.com", $subject, $message, $from);
     }
-  ?>
+  ?> -->
 
 
 
